@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">CloudChat</string>
+    <string name="send">Send</string>
+    <string name="pass">password</string>
+    <string name="name">Name</string>
+    <string name="ok">ok</string>
+</resources>

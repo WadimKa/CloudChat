@@ -1,0 +1,59 @@
+{
+  "project_info": {
+    "project_number": "144946829899",
+    "firebase_url": "https://cloudchat-59cf4.firebaseio.com",
+    "project_id": "cloudchat-59cf4",
+    "storage_bucket": "cloudchat-59cf4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:144946829899:android:e2ee475f32781d93",
+        "android_client_info": {
+          "package_name": "com.wadimkazak.cloudchat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "144946829899-8p39p32l9d34pl1o6153b7dsae7e2i8g.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.wadimkazak.cloudchat",
+            "certificate_hash": "a3ebc583880f5955538526a49394af1e125fa580"
+          }
+        },
+        {
+          "client_id": "144946829899-c3vdaiuah8ts0ccnsmtlsdorago79n49.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "144946829899-c3vdaiuah8ts0ccnsmtlsdorago79n49.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCQQ3HfGCPrBdoDCJTJ7DzE_DeQqleu4kg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "144946829899-c3vdaiuah8ts0ccnsmtlsdorago79n49.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
