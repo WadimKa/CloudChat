@@ -9,7 +9,10 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+import android.widget.Toast;
 
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.ChildEventListener;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -28,6 +31,7 @@ public class MessagesListFragment extends Fragment {
     ArrayList<Message> messages = new ArrayList<>();
     FirebaseDatabase database = FirebaseDatabase.getInstance();
     DatabaseReference myRef = database.getReference("message");
+    FirebaseAuth firebaseAuth;
 
     @Nullable
     @Override
@@ -35,6 +39,9 @@ public class MessagesListFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_with_messages, container, false);
         recyclerView = view.findViewById(R.id.rv_list_of_messages);
         recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
+
+        firebaseAuth = FirebaseAuth.getInstance();
+        FirebaseUser firebaseUser = firebaseAuth.getCurrentUser();
 
         final MessagesAdapter messagesAdapter = new MessagesAdapter(messages);
         messagesAdapter.notifyDataSetChanged();
@@ -70,6 +77,8 @@ public class MessagesListFragment extends Fragment {
         });
         recyclerView.smoothScrollToPosition(messages.size());
         recyclerView.setAdapter(messagesAdapter);
+
+        Toast.makeText(getActivity(), firebaseUser.getDisplayName(), Toast.LENGTH_SHORT).show();
 
         return view;
     }
